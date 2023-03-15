@@ -2,18 +2,20 @@ package controllers;
 
 import models.Habitation;
 import models.Vehicule;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import services.HacktonCarboneService;
 import services.IHacktonCarboneService;
 
 @RestController
-@RequestMapping(path = "/hacktoncarbone", produces = "application/json")
-@CrossOrigin(origins = "*")
 public class HacktonCarboneController {
-    private IHacktonCarboneService hcService;
+    @Autowired
+    private HacktonCarboneService hcService;
 
-    public HacktonCarboneController(IHacktonCarboneService hacktonCarboneService) {
-        this.hcService = hacktonCarboneService;
+    @GetMapping(path = "/")
+    public ResponseEntity<String> test() {
+        return ResponseEntity.ok("Test");
     }
 
     @GetMapping(path = "/habitation")

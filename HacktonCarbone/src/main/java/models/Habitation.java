@@ -1,10 +1,10 @@
 package models;
 
 public record Habitation (
-    boolean isAppartement,
+    boolean isAppart,
     double nbPersonnes,
-    int ageLogement,
-    boolean isEcoConstruit,
+    int age,
+    boolean isEco,
     double surface,
     double consoElec,
     boolean hasClim,
