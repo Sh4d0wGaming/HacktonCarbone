@@ -24,7 +24,7 @@ public class HacktonCarboneService : IHacktonCarboneService
 
     public double CalculateVehicule(Vehicule vehicule)
     {
-        throw new NotImplementedException();
+        return 0;
     }
 
     private double Construction(double surface, int age, bool isEco, bool isAppart)
