@@ -1,0 +1,9 @@
+{
+  "carteGrise": "Une Carte Grise",
+  "kilometrageVoiture": 12200,
+  "hasMoto": false,
+  "nbVoyageurs": 2.2,
+  "proprioVoiture": true,
+  "isScooter": false,
+  "cmCube": 0
+}

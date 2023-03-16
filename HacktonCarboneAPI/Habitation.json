@@ -1,0 +1,15 @@
+{
+  "isApart": false,
+  "nbPersonnes": 2.2,
+  "age": 45,
+  "isEco": false,
+  "surface": 113.1,
+  "consoElec": 5146.9,
+  "hasClim": false,
+  "nbClim": 0,
+  "hasGaz": false,
+  "hasBois": false,
+  "hasFioul": false,
+  "hasReseauChal": false,
+  "hasGPL": false
+}

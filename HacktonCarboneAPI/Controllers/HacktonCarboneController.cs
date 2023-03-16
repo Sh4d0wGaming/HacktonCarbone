@@ -13,16 +13,16 @@ namespace HacktonCarboneAPI.Controllers
             HacktonCarboneService = hacktonCarboneService;
         }
 
-        // Get api/<HacktonCarboneController>/habitation
-        [HttpGet("habitation")]
+        // Post api/<HacktonCarboneController>/habitation
+        [HttpPost("habitation")]
         public async Task<Double> CalculateHabitation([FromBody] Habitation habitation)
         {
             double result = await Task.Run(() => HacktonCarboneService.CalculateHabitation(habitation));
             return result;
         }
 
-        // Get api/<HacktonCarboneController>/vehicule
-        [HttpGet("vehicule")]
+        // Post api/<HacktonCarboneController>/vehicule
+        [HttpPost("vehicule")]
         public async Task<double> CalculateVehicule([FromBody] Vehicule vehicule)
         {
             double result = await Task.Run(() => HacktonCarboneService.CalculateVehicule(vehicule));
