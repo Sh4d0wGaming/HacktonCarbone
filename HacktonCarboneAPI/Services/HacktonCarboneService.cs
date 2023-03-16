@@ -138,7 +138,7 @@ public class HacktonCarboneService : IHacktonCarboneService
                 {
                     empreinteLitre = 1.11;
                 }
-                auKm = (double.Parse(modele.consommation) / 100) * empreinteLitre;
+                auKm = (modele.consommation / 100) * empreinteLitre;
             }
             double usage = vehicule.KilometrageVoiture * auKm;
             vehiculeCarbone = (constructAmo + usage) / vehicule.NbVoyageurs;
